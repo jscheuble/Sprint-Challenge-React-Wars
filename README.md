@@ -26,13 +26,28 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a UI library created by Facebook to render UI. Rather than doing many things, React JS focuses on one thing, rendering UI components.
+By breaking our entire application into small components, React allows developers to focus on one component at a time and combine them into a full application.
+When data and is constantly changing, React allows us to update the app without the need to refresh the page each time something changes.  It allows developers to easily build complex
+applications with minimal, DRY code.
+
 - [ ] What does it mean to _think_ in react?
+
+Thinking in React means thinking in components. After looking at the big picture, break the whole UI into smaller function components. Creating a game plan for which elements need their own component and which are smaller parts of larger components is highly beneficial for executing a React application, and for thinking in react. The general rule is that components should do one thing. If your component does multiple things, break it up into multiple components.
 
 - [ ] Describe state.
 
+State refers to the current status. Whenever something new appears on our screen without our page refreshing, that is a change of state. React allows us to watch for state change, by setting the state to 
+a specific object or variable. State can be an array, an object, a boolean, a string, whatever type we set it to. When that state changes, we can make our application to do something.
+
+
 - [ ] Describe props.
 
+Similar to HTML elements having attributes, React components can have props, or properties. We can set these props to whatever we want them to be, allowing us to pass them to other components to be used there. For example, if we are setting state in the parent component and we need to change state in the child component, we could pass the state variables as props, therefore giving us access to change the state in the child component.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects refer to anything that affects something outside of the scope of the function that is currently being executed. For example, fetching data from an API, or manipulating DOM elements manually.
 
 ## Project Set Up
 
