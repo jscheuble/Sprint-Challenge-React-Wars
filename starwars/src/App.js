@@ -2,6 +2,16 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Axios from 'axios';
 import Character from './components/Character';
+import styled from 'styled-components';
+
+const CardContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -25,9 +35,11 @@ const App = () => {
   return (
     <div className='App'>
       <h1 className='Header'>React Wars</h1>
+      <CardContainer>
       {data.map((item, i) => {
         return <Character key={i} hair={item.hair_color} eye={item.eye_color} name={item.name} skin={item.skin_color}/>
       })}
+      </CardContainer>
     </div>
   );
 }
