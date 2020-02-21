@@ -47,7 +47,7 @@ Similar to HTML elements having attributes, React components can have props, or 
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
 
-Side effects refer to anything that affects something outside of the scope of the function that is currently being executed. For example, fetching data from an API, or manipulating DOM elements manually.
+Side effects refer to anything that affects something outside of the scope of the function that is currently being executed. For example, fetching data from an API, or manipulating DOM elements manually. We can sync effects to state changes by setting the state variable to something new once the effect has taken place.
 
 ## Project Set Up
 
